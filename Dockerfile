@@ -1,8 +1,8 @@
 FROM fedora:38
 MAINTAINER codefossa (codefossa@gmail.com)
 
-ENV UID=0
-ENV GID=0
+ENV UID=1000
+ENV GID=1000
 
 COPY ./ZThread-2.3.2 /app/tmp/zthread
 COPY ./template /app/server/server
