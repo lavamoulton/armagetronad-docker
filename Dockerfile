@@ -1,8 +1,8 @@
-FROM fedora:38
+FROM UBUNTU
 MAINTAINER codefossa (codefossa@gmail.com)
 
-ENV UID=1000
-ENV GID=1000
+ARG UID
+ARG GID
 
 COPY ./ZThread-2.3.2 /app/tmp/zthread
 COPY ./template /app/server/server
